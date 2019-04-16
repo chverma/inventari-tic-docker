@@ -1,0 +1,3 @@
+[submodule "parts_incidencia"]
+	path = parts_incidencia
+	url = https://github.com/chverma/parts_incidencia
