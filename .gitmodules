@@ -1,3 +1,3 @@
 [submodule "inventari-tic"]
-	path = inventari_tic
+	path = inventari-tic
 	url = git@github.com:chverma/inventari-tic.git
