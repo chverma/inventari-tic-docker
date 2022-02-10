@@ -11,7 +11,7 @@ services:
     working_dir: /web
     command: npm start
     volumes:
-      - ./parts_incidencia:/web
+      - ./inventari-tic:/web
   mysql:
     image: mysql:8.0.1
     container_name: inventari-tic-mysql

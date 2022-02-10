@@ -15,8 +15,10 @@ In `inventari-tic/.env` set the variables. Focus on the MYSQL password, it must 
 (cd inventari-tic && npm i)
 ## Build database
 docker-compose up -d && \
-DB_HOST=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' inventari-tic-mysql) &&
+DB_HOST=$(docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' inventari-tic-mysql) && \
 mysql -h $DB_HOST -uroot -pmy-secret-pw --ssl-mode=DISABLED < inventari-tic/app/model/db_inventari_tic.sql
+
+(If fails, try in a few minutes in order to mysql sql be ready)
 
 ## Deploy servicies
 docker-compose up -d
