@@ -1,10 +1,12 @@
 # Docker infraestructure for inventari-tic
 ## Init project
 git submodule init
+
 git submodule update --recursive
 
 ## Copy env file
 cp {,.}env
+
 cp inventari-tic/{,.}env
 ## Set variables
 In `inventari-tic/.env` set the variables. Focus on the MYSQL password, it must be the one provided in this .env file.
